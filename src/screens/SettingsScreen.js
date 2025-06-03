@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {View, Text, TouchableOpacity, Switch, StyleSheet, Image, ScrollView} from 'react-native';
+import {View, Text, TouchableOpacity, Switch, StyleSheet, Image, ScrollView, ImageBackground} from 'react-native';
 
 const SettingsScreen = ({ navigation }) => {
     const [notificationsEnabled, setNotificationsEnabled] = useState(true);
@@ -7,8 +7,9 @@ const SettingsScreen = ({ navigation }) => {
     const toggleSwitch = () => setNotificationsEnabled(previousState => !previousState);
 
     return (
+        <ImageBackground style={{flex: 1}} source={require('../assets/img/fqwffqwf.png')}>
         <ScrollView style={styles.container}>
-            <Text style={styles.title}>Settings</Text>
+            {/*<Text style={styles.title}>Settings</Text>*/}
 
             <Image
                 source={require('../assets/img/IMG_84661fwqf.png')}
@@ -62,13 +63,14 @@ const SettingsScreen = ({ navigation }) => {
             {/*</TouchableOpacity>*/}
             <View style={{marginBottom:150}}/>
         </ScrollView>
+        </ImageBackground>
     );
 };
 
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#000',
+        // backgroundColor: '#000',
         padding: 20,
     },
     title: {
@@ -83,6 +85,7 @@ const styles = StyleSheet.create({
         height: 100,
         alignSelf: 'center',
         marginBottom: 20,
+        marginTop: 40,
         resizeMode: 'contain',
     },
     resetButton: {

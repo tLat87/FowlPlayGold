@@ -80,7 +80,7 @@ const AddAnimalScreen = ({navigation}) => {
             {showDatePicker && (
                 <DateTimePicker
                     value={date}
-                    textColor="#fff" // для iOS
+                    textColor="#fff"
                     mode="date"
                     display="spinner"
                     onChange={onChangeDate}

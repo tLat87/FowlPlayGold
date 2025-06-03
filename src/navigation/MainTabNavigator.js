@@ -82,6 +82,7 @@ const MainTabNavigator = () => {
                 name="SettingsScreen"
                 component={SettingsScreen}
                 options={{
+                    headerShown: false,
                     tabBarLabel: '',
                     tabBarIcon: ({ focused }) => (
                         <Image source={require('../assets/img/main/settings.png')} />
