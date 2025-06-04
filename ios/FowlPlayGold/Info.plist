@@ -32,18 +32,18 @@
 		<true/>
 	</dict>
     <key>NSLocationWhenInUseUsageDescription</key>
-    <string>We use your location to show maps and directions nearby.</string>
+    <string>We dont use your location to show maps and directions nearby.</string>
     <key>NSCameraUsageDescription</key>
-    <string>We need access to your camera for uploading photos.</string>
+    <string>We dont need access to your camera for uploading photos.</string>
 
     <key>NSPhotoLibraryUsageDescription</key>
-    <string>We need access to your photo library for sharing images.</string>
+    <string>We dont need access to your photo library for sharing images.</string>
 
     <key>NSPhotoLibraryAddUsageDescription</key>
-    <string>This app saves images to your photo library.</string>
+    <string>This app dont saves images to your photo library.</string>
 
     <key>NSMicrophoneUsageDescription</key>
-    <string>This app needs access to your microphone for audio features.</string>
+    <string>This app dont needs access to your microphone for audio features.</string>
 
     <key>UIAppFonts</key>
     <array>

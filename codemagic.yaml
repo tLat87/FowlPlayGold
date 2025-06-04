@@ -52,7 +52,7 @@ workflows:
     publishing:
       email:
         recipients:
-          - caitlinquestxc996@gmail.com       # <----+
+          - t.latush@upstars.com       # <----+
         notify:
           success: true
           failure: false
