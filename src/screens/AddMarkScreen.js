@@ -29,6 +29,13 @@ const AddMarkScreen = ({navigation, route}) => {
 
     const dispatch = useDispatch();
 
+    console.log('f',
+        // selectedAnimal,
+        // numberOfAnimals,
+        // age,
+        date,
+        // selectedMark,
+    )
     return (
         <ScrollView style={styles.container}>
             <TouchableOpacity style={styles.backButton} onPress={() => navigation.goBack()}>

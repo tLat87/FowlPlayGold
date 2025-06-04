@@ -24,6 +24,7 @@ const AddAnimalScreen = ({navigation}) => {
     const onChangeDate = (event, selectedDate) => {
         const currentDate = selectedDate || date;
         setShowDatePicker(Platform.OS === 'ios');
+        console.log(currentDate);
         setDate(currentDate);
     };
 
@@ -96,7 +97,8 @@ const AddAnimalScreen = ({navigation}) => {
                 onChangeText={setAge}
             />
 
-            <TouchableOpacity style={styles.checkButton} onPress={() => {navigation.navigate('AddMarkScreen', {selectedAnimal, numberOfAnimals, age, date})}}>
+            <TouchableOpacity style={styles.checkButton} onPress={() => {navigation.navigate('AddMarkScreen', {selectedAnimal, numberOfAnimals, age, date: date.toISOString(),
+            })}}>
                 <Image source={require('../assets/img/Icon.png')}/>
             </TouchableOpacity>
             <View style={{marginBottom: 50}}/>
