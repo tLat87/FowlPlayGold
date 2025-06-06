@@ -8,8 +8,7 @@ import {
     TextInput,
     Platform, Image,
 } from 'react-native';
-import { Picker } from '@react-native-picker/picker';
-import DateTimePicker from '@react-native-community/datetimepicker';
+
 import {useDispatch} from 'react-redux';
 import {addAnimalMark} from '../redux/slices/animalMarksSlice';
 
